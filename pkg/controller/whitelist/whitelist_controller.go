@@ -117,7 +117,8 @@ func (r *ReconcileWhiteList) Reconcile(request reconcile.Request) (reconcile.Res
 		if errors.IsNotFound(err) {
 			// cleanup deleted Sloop
 			log.Printf("Deployment or Sloop %s deleted ", request.NamespacedName)
-			// TODO update all whiteList with "r.List func"
+			// TODO This may cause a bug, if a deployment's namespacedname is same as whitelist's namespacedname.
+			// TODO Update all whiteList using "r.List func"
 			delete(whiteList[request.Namespace], request.Name)
 			return reconcile.Result{}, nil
 		}
