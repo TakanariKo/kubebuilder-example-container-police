@@ -19,5 +19,5 @@ limitations under the License.
 // +k8s:deepcopy-gen=package,register
 // +k8s:conversion-gen=foo.bar/pkg/apis/police
 // +k8s:defaulter-gen=TypeMeta
-// +groupName=police.k8s.io
+// +groupName=police.foo.bar
 package v1beta1

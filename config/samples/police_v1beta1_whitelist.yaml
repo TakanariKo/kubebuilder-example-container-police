@@ -1,4 +1,4 @@
-apiVersion: police.k8s.io/v1beta1
+apiVersion: police.foo.bar/v1beta1
 kind: WhiteList
 metadata:
   labels:

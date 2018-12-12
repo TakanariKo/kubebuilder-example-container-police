@@ -4,9 +4,9 @@ metadata:
   creationTimestamp: null
   labels:
     controller-tools.k8s.io: "1.0"
-  name: whitelists.police.k8s.io
+  name: whitelists.police.foo.bar
 spec:
-  group: police.k8s.io
+  group: police.foo.bar
   names:
     kind: WhiteList
     plural: whitelists
