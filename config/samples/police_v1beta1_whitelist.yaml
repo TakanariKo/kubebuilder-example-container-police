@@ -1,0 +1,16 @@
+apiVersion: police.k8s.io/v1beta1
+kind: WhiteList
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: whitelist-sample
+spec:
+  images:
+    - name: nginx
+      tags: 
+        - latest
+        - 1.14.2
+    - name: gcr.io/busybox
+      tags: 
+        - latest
+
